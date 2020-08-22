@@ -99,7 +99,7 @@ let todoItem = React.functionComponent("todoItem", fun (props : {| key: Guid
                    Html.input [
                        prop.className "toggle"
                        prop.type' "checkbox"
-                       prop.ariaChecked props.todo.completed
+                       prop.isChecked props.todo.completed
                        prop.onCheckedChange (fun _ -> props.onToggle())
                    ]
                    Html.label [
